@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./sass/custom-bootstrap.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-info p-4">
+        <div class="container-fluid">
+          <div>
+            <img
+              src="./assets/28533206e4604cf6a70f2f802bdd207a-free.png"
+              class="w-25"
+            />
+          </div>
+          <a class="navbar-brand text-white" href="#">GAMEVAULT</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./backoffice.html"
+                  >BackOffice</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorie
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Giochi</a></li>
+                  <li><a class="dropdown-item" href="#">Console</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Info</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mb-0" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container my-5 flex-grow-1">
+      <div class="row">
+        <div class="col">
+          <div id="product-card" class="card">
+            <!-- I dettagli del prodotto verranno caricati qui -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-info text-center py-3">
+      <p class="m-0 text-white">GameVault - <span id="year"></span></p>
+      <div class="container">
+        <p class="text-white">P.IVA 100900200</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Termini di servizio</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#"><img src="./assets/facebook (1).svg" /></a>
+            <a href="#" class="ms-3"><img src="./assets/twitter-x.svg" /></a>
+            <a href="#" class="ms-3"
+              ><img src="./assets/instagram (1).svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/details.js"></script>
+  </body>
+</html>

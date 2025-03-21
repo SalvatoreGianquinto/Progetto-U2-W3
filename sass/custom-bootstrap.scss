@@ -1,0 +1,12 @@
+@import "../scss/functions";
+@import "../scss/variables";
+
+$new-info: #143447;
+
+$new-theme-colors: (
+  "info": $new-info,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import "../scss/bootstrap.scss";
